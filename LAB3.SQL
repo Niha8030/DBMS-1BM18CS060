@@ -126,4 +126,5 @@ insert into shipment values(120,6,'21-dec-05');
 
 select * from shipment;
 
-
+select shipment.order_no,warehouse.city from shipment,warehouse
+where warehouse.warehouse_no = shipment.warehouse_no and warehouse.city='bangalore';
